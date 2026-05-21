@@ -11,8 +11,8 @@ class Settings(BaseSettings):
     cloudinary_api_key: str
     cloudinary_api_secret: str
     smtp_password: str
-    domain: str = "http://localhost:8000"
-    frontend_url: str = "http://localhost:3000"
+    domain: str = "https://lerna-backend.vercel.app"
+    frontend_url: str = "https://lerna-frontend.vercel.app"
     secret_key: str = "supersecretkeythatisatleast32chars!"
 
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8")
